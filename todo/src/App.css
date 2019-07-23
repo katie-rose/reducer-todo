@@ -1,33 +1,102 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #2d2d37;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span {
   color: white;
+  font-family: "Darker Grotesque", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: center;
+  padding: 0 36px;
+  max-width: 665px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  text-align: left;
+}
+
+.todo-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.item {
+  background-color: #0087a8;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+  width: 45%;
+  text-align: left;
+  margin: 4px 0;
+  padding-left: 8px;
+}
+
+.item.completed {
+  background-color: #7cc7d1;
+  text-decoration: line-through;
+}
+form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+form > input {
+  background-color: #2d2d37;
+  border: 0;
+  padding: 6px 0;
+  font-size: 1rem;
+  width: 240px;
+  outline: 0;
+  color: white;
+  border-bottom: 1px solid #065d77;
+  margin-right: 8px;
+}
+
+button {
+  font-family: "Darker Grotesque", sans-serif;
+  background-color: #065d77;
+  border: 1px solid #065d77;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+}
+
+input::placeholder {
+  color: #065d77;
+  opacity: 1;
+}
+
+.clear-btn {
+  margin-top: 16px;
 }
